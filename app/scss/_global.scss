@@ -1,2 +1,13 @@
+.container-big {
+  max-width: 1770px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-small {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
 body {
+  @extend %DMSans-400;
 }
