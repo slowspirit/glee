@@ -21,3 +21,10 @@ body {
 .main {
   flex-grow: 1;
 }
+
+.title {
+  @extend %DMSans-700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+}
