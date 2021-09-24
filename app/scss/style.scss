@@ -294,7 +294,7 @@
 }
 
 .products {
-  margin-bottom: 80px;
+  margin-bottom: 180px;
   &__title {
     margin-bottom: 35px;
   }
@@ -384,6 +384,115 @@
         transition: all 0.3s;
       }
     }
+  }
+}
+
+.best {
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 105px;
+  }
+  &__item {
+    padding-bottom: 70px;
+    height: 390px;
+    background-color: $peachFirst;
+  }
+  &__item-inner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transform: translateY(-20%);
+  }
+
+  &__item-content {
+    margin-left: 60px;
+  }
+  &__item-title {
+    max-width: 250px;
+    font-size: 26px;
+    @extend %DMSans-700;
+    color: $title;
+    margin-bottom: 10px;
+  }
+  &__item-text {
+    max-width: 335px;
+    @extend %rubik-400;
+    color: $title;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  &__item-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    height: 60px;
+    padding: 20px;
+    background-color: transparent;
+    @extend %rubik-500;
+    font-size: 15px;
+    color: $menuLink;
+    cursor: pointer;
+    border: 1px solid #b3b7b5;
+    border-radius: 5px;
+  }
+}
+
+.design {
+  margin-bottom: 120px;
+  &__title {
+    margin-bottom: 35px;
+  }
+  &__filter-menu {
+    text-align: center;
+    margin-bottom: 85px;
+  }
+  &__filter-item {
+    border: none;
+    background-color: transparent;
+    @extend %DMSans-700;
+    font-size: 18px;
+    color: $subtext;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      color: #191919;
+      transition: all 0.3s;
+    }
+  }
+  .mixitup-control-active {
+    color: #191919;
+  }
+  &__item {
+    width: 370px;
+    height: 245px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    padding-top: 40px;
+    padding-left: 35px;
+  }
+
+  &__content {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  &__item-title {
+    max-width: 175px;
+    font-size: 20px;
+    @extend %DMSans-700;
+    color: #191919;
+    margin-bottom: 15px;
+  }
+  &__item-subtitle {
+    font-size: 16px;
+    @extend %DMSans-700;
+    color: $subtitle;
   }
 }
 
