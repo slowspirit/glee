@@ -7,5 +7,17 @@ $(function () {
     autoplaySpeed: 5000
   });
 
-  var mixer = mixitup('.products__content');
+  // 
+  var containerEl1 = document.querySelector('[data-ref="products__mix"]');
+  var containerEl2 = document.querySelector('[data-ref="design__mix"]');
+
+  var config = {
+      controls: {
+          scope: 'local'
+      }
+  };
+
+  var mixer1 = mixitup(containerEl1, config);
+  var mixer1 = mixitup(containerEl2, config);
+  
 });
