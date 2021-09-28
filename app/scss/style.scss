@@ -731,4 +731,34 @@
   }
 }
 
+.terms {
+  margin: 125px 0 120px;
+  &__title {
+    font-size: 24px;
+    line-height: 40px;
+    color: $title;
+    @extend %rubik-500;
+    margin-bottom: 25px;
+  }
+  &__list {
+    margin-bottom: 80px;
+    list-style-type: decimal-leading-zero;
+    margin-left: 30px;
+  }
+  &__list-item,
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+    color: $title;
+    @extend %rubik-400;
+  }
+  &__list-item {
+    margin-bottom: 30px;
+    padding-left: 10px;
+  }
+  &__text {
+    margin-bottom: 75px;
+  }
+}
+
 @import "media";
