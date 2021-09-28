@@ -7,7 +7,7 @@ $(function () {
     autoplaySpeed: 5000
   });
 
-  // 
+
   var containerEl1 = document.querySelector('[data-ref="products__mix"]');
   var containerEl2 = document.querySelector('[data-ref="design__mix"]');
 
