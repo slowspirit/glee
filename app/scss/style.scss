@@ -761,4 +761,221 @@
   }
 }
 
+.about {
+  margin: 120px 0;
+  &__top {
+    display: flex;
+  }
+  &__content {
+    margin-left: 50px;
+  }
+  &__yeaers {
+    display: flex;
+    align-items: center;
+  }
+  &__yeaers-num {
+    @extend %rubik-500;
+    font-size: 140px;
+    color: $subtitle;
+    margin-right: 20px;
+  }
+  ul.about__yeaers-list {
+    padding-top: 25px;
+  }
+  &__yeaers-text {
+    font-size: 16px;
+    line-height: 30px;
+    @extend %rubik-400;
+    color: $title;
+  }
+  &__title {
+    color: $title;
+    font-size: 36px;
+    @extend %DMSans-700;
+    margin-bottom: 45px;
+  }
+  &__text {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $title;
+    margin-bottom: 60px;
+  }
+  &__num {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #ebeef3;
+  }
+  &__num-item {
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 18px;
+    padding-left: 60px;
+    padding-right: 30px;
+    margin-top: 30px;
+    border-right: 1px solid #ebeef3;
+  }
+  &__num-item:last-child {
+    border-right: none;
+  }
+  &__num-title {
+    font-size: 36px;
+    line-height: 38px;
+    color: $title;
+    @extend %DMSans-700;
+    margin-bottom: 10px;
+  }
+  &__num-text {
+    font-size: 16px;
+    line-height: 17px;
+    @extend %DMSans-700;
+    color: #4c4c4c;
+  }
+  &__num-item:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 12px;
+    width: 37px;
+    height: 38px;
+    background-image: url(../images/icons/list.png);
+  }
+  &__num-item:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 44px;
+    height: 40px;
+    background-image: url(../images/icons/megaphone.png);
+  }
+  &__num-item:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 43px;
+    height: 42px;
+    background-image: url(../images/icons/medal.png);
+  }
+  &__bottom {
+    background-color: $peachFirst;
+    height: 325px;
+  }
+  &__bottom-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 125px;
+    padding-top: 85px;
+  }
+  &__bottom-item {
+    text-align: center;
+  }
+  &__bottom-img {
+    display: inline;
+  }
+  &__bottom-title {
+    margin: 15px 0;
+    color: $title;
+    font-size: 36px;
+    @extend %DMSans-700;
+  }
+  &__bottom-text {
+    color: $title;
+    font-size: 18px;
+    line-height: 32px;
+    @extend %DMSans-700;
+  }
+}
+
+.team {
+  margin-bottom: 170px;
+  &__inner {
+    display: flex;
+  }
+  &__info {
+    max-width: 300px;
+    margin-right: 100px;
+  }
+  &__title {
+    @extend %DMSans-700;
+    color: $title;
+    font-size: 36px;
+  }
+  &__text {
+    @extend %rubik-400;
+    color: $title;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 20px 0 30px;
+  }
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    width: 170px;
+    height: 50px;
+    background-color: #a3bbc8;
+    color: #fff;
+    border-radius: 5px;
+    @extend %poppins-600;
+  }
+
+  &__people {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 100px;
+    grid-column-gap: 30px;
+  }
+  &__item {
+    max-width: 370px;
+    width: 100%;
+    position: relative;
+  }
+  &__item-img {
+    object-fit: cover;
+  }
+  &__item-content {
+    max-width: 325px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px 25px;
+    background-color: #fff;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    position: absolute;
+    bottom: -75px;
+  }
+  &__item-name {
+    font-size: 22px;
+    line-height: 26px;
+    color: $menuLink;
+    @extend %DMSans-700;
+    margin-bottom: 10px;
+  }
+  &__item-position {
+    color: #565872;
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  &__item-social {
+    display: flex;
+  }
+  &__social-instagram,
+  &__social-google {
+    margin: 0 4px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f6f6f6;
+  }
+}
+
 @import "media";
