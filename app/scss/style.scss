@@ -1383,6 +1383,16 @@
   }
 }
 
+.map{
+  width: 500px;
+  height: 335px;
+  background-color: #232323;
+  iframe{
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .blog-page{
   padding: 120px 0;
   &__inner{
