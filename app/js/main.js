@@ -8,6 +8,20 @@ $(function () {
     $($(this).attr('href')).addClass('product-tabs__content-item--active');
   });
 
+  $('.shop-content__filter-btn').on('click', function () {
+    $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');
+    $(this).addClass('shop-content__filter-btn--active');
+  });
+
+  $('.button-list').on('click', function () {
+    $('.shop-content__inner').addClass('products__item--list');
+    $('.products__item').addClass('products__item--list');
+  });
+  $('.button-grid').on('click', function () {
+    $('.products__item').removeClass('products__item--list');
+  });
+
+  $('.select-style').styler();
   $('.product-filter__item-num').styler();
 
   $(".star").rateYo({
