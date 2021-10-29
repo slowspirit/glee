@@ -1,5 +1,13 @@
 $(function () {
 
+  $('.shop__filter-btn').on('click', function () {
+    $('.shop__filters').slideToggle();
+  });
+
+  $('.menu__btn').on('click', function () {
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+
   $('.product-tabs__top-item').on('click', function (e) {
     e.preventDefault();
     $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
@@ -15,9 +23,12 @@ $(function () {
 
   $('.button-list').on('click', function () {
     $('.shop-content__inner').addClass('products__item--list');
+    $('.shop-content__inner').addClass('shop-content__nogrid');
     $('.products__item').addClass('products__item--list');
   });
   $('.button-grid').on('click', function () {
+    $('.shop-content__inner').removeClass('products__item--list');
+    $('.shop-content__inner').removeClass('shop-content__nogrid');
     $('.products__item').removeClass('products__item--list');
   });
 
@@ -61,21 +72,29 @@ $(function () {
     draggable: false,
     arrows: false,
     fade: true,
+    responsive: [
+      {
+        breakpoint: 901,
+        settings: {
+          draggable: true,
+        }
+      }
+    ],
   });
 
   $('.top-slider__inner').slick({
-    dots: false,
+    dots: true,
     arrows: false,
     fade: true,
   });
 
-  $('.related__content').slick({
-    infinite: false,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/slider-arrow-left.svg"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slider-arrow-right.svg"></button>',
-  });
+  // $('.related__content').slick({
+  //   infinite: false,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/slider-arrow-left.svg"></button>',
+  //   nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slider-arrow-right.svg"></button>',
+  // });
 
   var containerEl1 = document.querySelector('[data-ref="products__mix"]');
   var containerEl2 = document.querySelector('[data-ref="design__mix"]');
